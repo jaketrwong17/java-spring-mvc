@@ -1,13 +1,20 @@
 package com.example.laptopshop.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String email;
     private String password;
     private String fullName;
     private String address;
     private String phone;
-
 
     public long getId() {
         return id;
@@ -62,7 +69,6 @@ public class User {
         return "User [id=" + id + ", email=" + email + ", password=" + password + ", fullName=" + fullName
                 + ", address=" + address + ", phone=" + phone + "]";
     }
-    
 
 }
 // id: long
