@@ -19,11 +19,11 @@
         <body>
             hello from jsp
             <h1>
-                ${hoidanit}
+
 
             </h1>
             <h2>
-                ${hoidanit2}
+
             </h2>
             <button class="btn btn-warning">Submit</button>
         </body>
