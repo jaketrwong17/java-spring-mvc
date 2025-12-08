@@ -24,7 +24,7 @@
                         <div class="col-12 mx-auto">
                             <div class="d-flex justify-content-between">
                                 <h3>Create a user</h3>
-                                <a href="/admin/user/create" class="btn btn-primary">Create a user </a>
+                                <a href="/admin/user/update" class="btn btn-primary">Create a user </a>
                             </div>
                             <hr />
                             <table class="table table-hover table-bordered">
@@ -46,7 +46,8 @@
                                                 <a href="/admin/user/${user.id}" class="btn btn-success">View</a>
                                                 <a href="/admin/user/update/${user.id}"
                                                     class="btn btn-warning">Update</a>
-                                                <button class="btn btn-danger">Delete</button>
+                                                <a href="/admin/user/delete/${user.id}"
+                                                    class="btn btn-danger">Delete</a>
                                             </td>
                                         </tr>
                                     </c:forEach>
